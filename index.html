@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yoni 365 Spa — Sensual Yoni Healing Home Spa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Yoni 365 Spa — Home Spa riêng tư dành cho nữ, tập trung Yoni Healing, body flow & nữ tính. Vị trí 182/2 Nguyễn Văn Thủ, Đa Kao, Quận 1, TP.HCM."
+  />
+  <style>
+    :root {
+      --bg: #08020d;
+      --bg-soft: #140716;
+      --accent: #f9a8d4;
+      --accent-strong: #fb7185;
+      --accent-soft: rgba(249, 168, 212, 0.25);
+      --text: #fef9fb;
+      --muted: #f5d0e7;
+      --border-soft: rgba(255, 255, 255, 0.12);
+      --radius-xl: 26px;
+      --radius-lg: 18px;
+      --shadow-soft: 0 24px 48px rgba(0, 0, 0, 0.65);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #3b0f2c 0, #08020d 55%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 16px 80px;
+    }
+
+    /* TOP HINT */
+    .top-hint {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+      letter-spacing: 0.04em;
+    }
+
+    .top-hint span {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: rgba(0, 0, 0, 0.35);
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .top-hint-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #f97316;
+      box-shadow: 0 0 10px rgba(249, 115, 22, 0.9);
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+    .hero-right {
+      position: relative;
+      padding: 16px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    @media (max-width: 840px) {
+      .hero-right {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    }
+
+    .hero-image-card {
+      position: relative;
+      flex: 1;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background-image: url("https://images.pexels.com/photos/3738344/pexels-photo-3738344.jpeg?auto=compress&cs=tinysrgb&w=1200");
+      background-size: cover;
+      background-position: center;
+      min-height: 230px;
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(15, 23, 42, 0.86),
+        rgba(24, 0, 18, 0.45),
+        transparent 40%
+      );
+    }
+
+    .hero-image-caption {
+      position: absolute;
+      inset-inline: 16px;
+      bottom: 16px;
+      font-size: 0.85rem;
+      color: #ffe4f0;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      font-size: 0.8rem;
+    }
