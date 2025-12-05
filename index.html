@@ -1,648 +1,239 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Massage Yoni Feeling - Spa thư giãn & chăm sóc cơ thể</title>
-  <meta name="description" content="Massage Yoni Feeling - Massage thư giãn, chăm sóc da, giảm stress, không gian riêng tư, sạch sẽ, tinh tế." />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
+<!-- BẮT ĐẦU BẢNG GIÁ + ĐẶT LỊCH -->
+<section class="pricing-section" id="pricing">
+  <h2 class="title">BẢNG GIÁ DỊCH VỤ WELLNESS</h2>
+  <p class="sub">Không gian riêng tư • Trải nghiệm cao cấp • Chăm sóc chuyên sâu</p>
 
-    body {
-      background: #f8f5f2;
-      color: #222;
-      line-height: 1.6;
-    }
+  <div class="pricing-container">
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(20, 20, 20, 0.95);
-      color: #fff;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 0;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .logo span {
-      color: #f2d27b;
-    }
-
-    .nav ul {
-      list-style: none;
-      display: flex;
-      gap: 18px;
-      font-size: 14px;
-    }
-
-    .nav li a {
-      padding: 4px 0;
-      border-bottom: 2px solid transparent;
-      transition: 0.2s;
-    }
-
-    .nav li a:hover {
-      border-color: #f2d27b;
-    }
-
-    .btn-nav {
-      border: 1px solid #f2d27b;
-      padding: 6px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .btn-nav:hover {
-      background: #f2d27b;
-      color: #000;
-    }
-
-    main {
-      margin-top: 60px;
-    }
-
-    /* Hero */
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(120deg, #111, #29211c);
-      color: #fff;
-    }
-
-    .hero-inner {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 32px;
-      align-items: center;
-      padding: 40px 0 60px;
-    }
-
-    .hero-badge {
-      display: inline-block;
-      padding: 4px 10px;
-      font-size: 11px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      border-radius: 999px;
-      border: 1px solid #f2d27b;
-      margin-bottom: 12px;
-    }
-
-    .hero-title {
-      font-size: 32px;
-      line-height: 1.2;
-      margin-bottom: 12px;
-    }
-
-    .hero-title span {
-      color: #f2d27b;
-    }
-
-    .hero-sub {
-      font-size: 14px;
-      color: #ddd;
-      margin-bottom: 20px;
-    }
-
-    .hero-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 10px 18px;
-      font-size: 13px;
-      margin-bottom: 24px;
-    }
-
-    .hero-list li {
-      list-style: none;
-      position: relative;
-      padding-left: 16px;
-    }
-
-    .hero-list li::before {
-      content: "✦";
-      position: absolute;
-      left: 0;
-      color: #f2d27b;
-      font-size: 10px;
-      top: 4px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-
-    .btn-main {
-      background: #f2d27b;
-      color: #000;
-      border-radius: 999px;
-      padding: 10px 22px;
-      border: none;
-      font-size: 14px;
-      cursor: pointer;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-    }
-
-    .btn-main:hover {
-      opacity: 0.9;
-    }
-
-    .hero-note {
-      font-size: 12px;
-      color: #ccc;
-    }
-
-    .hero-side {
-      background: radial-gradient(circle at top, #f2d27b22, #111);
-      border-radius: 24px;
-      padding: 20px;
-      border: 1px solid #f2d27b55;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-    }
-
-    .hero-card-title {
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-
-    .hero-card-sub {
-      font-size: 12px;
-      color: #ccc;
-      margin-bottom: 16px;
-    }
-
-    .hero-card-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-
-    .hero-card-item {
-      background: rgba(0,0,0,0.4);
-      border-radius: 12px;
-      padding: 10px;
-      font-size: 12px;
-      border: 1px solid rgba(242,210,123,0.25);
-    }
-
-    .hero-card-item strong {
-      display: block;
-      margin-bottom: 4px;
-      color: #f2d27b;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .hero-hotline {
-      font-size: 13px;
-      padding: 10px;
-      border-radius: 12px;
-      background: rgba(0,0,0,0.5);
-      border: 1px dashed rgba(242,210,123,0.4);
-    }
-
-    .hero-hotline span {
-      color: #f2d27b;
-      font-weight: 600;
-    }
-
-    /* Generic sections */
-    section.section {
-      padding: 50px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .section-sub {
-      text-align: center;
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 30px;
-    }
-
-    /* About */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 26px;
-      align-items: start;
-    }
-
-    .about-text p {
-      font-size: 14px;
-      margin-bottom: 10px;
-      color: #444;
-    }
-
-    .about-highlight {
-      background: #fff7e9;
-      border-left: 3px solid #f2d27b;
-      padding: 10px 12px;
-      font-size: 13px;
-      border-radius: 6px;
-      margin-top: 8px;
-    }
-
-    .about-box {
-      background: #fff;
-      border-radius: 18px;
-      padding: 16px;
-      border: 1px solid #eee0c5;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      font-size: 13px;
-    }
-
-    .about-box h3 {
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-
-    .about-list li {
-      margin-bottom: 6px;
-    }
-
-    /* Services */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 18px;
-      padding: 18px;
-      border: 1px solid #eee0c5;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-      font-size: 14px;
-    }
-
-    .card h3 {
-      font-size: 15px;
-      margin-bottom: 6px;
-    }
-
-    .price {
-      font-weight: 700;
-      color: #b8860b;
-      margin-bottom: 4px;
-      font-size: 14px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #fff7e9;
-      color: #916a0d;
-      border-radius: 999px;
-      padding: 2px 8px;
-      font-size: 11px;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    /* Gallery */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 14px;
-    }
-
-    .gallery-item {
-      background: #ddd;
-      border-radius: 14px;
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      color: #555;
-    }
-
-    /* Contact */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 24px;
-      align-items: start;
-    }
-
-    .contact-info p {
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-
-    .contact-info strong {
-      color: #333;
-    }
-
-    .social-list {
-      list-style: none;
-      font-size: 14px;
-      margin-top: 8px;
-    }
-
-    .social-list li {
-      margin-bottom: 6px;
-    }
-
-    .map-placeholder {
-      background: #ddd;
-      border-radius: 18px;
-      padding: 12px;
-      font-size: 13px;
-      text-align: center;
-      color: #555;
-    }
-
-    .map-placeholder small {
-      display: block;
-      margin-top: 4px;
-      font-size: 12px;
-    }
-
-    footer {
-      background: #111;
-      color: #aaa;
-      text-align: center;
-      padding: 14px 10px 18px;
-      font-size: 12px;
-      margin-top: 30px;
-    }
-
-    footer span {
-      color: #f2d27b;
-    }
-
-    @media (max-width: 900px) {
-      .hero-inner,
-      .about-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .nav ul {
-        display: none;
-      }
-    }
-  </style>
-</head>
-<body>
-<header>
-  <div class="container nav">
-    <div class="logo">
-      Massage <span>Yoni Feeling</span>
+    <!-- Gói 1 -->
+    <div class="card">
+      <h3>Yoni Wellness Basic</h3>
+      <p class="time">60 phút</p>
+      <p class="price">750.000đ</p>
+      <ul>
+        <li>Thư giãn vùng bụng dưới – hông – thắt lưng</li>
+        <li>Kích hoạt hơi thở – thả lỏng cơ thể</li>
+        <li>Tinh dầu thư giãn cao cấp</li>
+      </ul>
     </div>
-    <ul>
-      <li><a href="#hero">Trang chủ</a></li>
-      <li><a href="#about">Giới thiệu</a></li>
-      <li><a href="#services">Dịch vụ</a></li>
-      <li><a href="#contact">Liên hệ</a></li>
-    </ul>
-    <a href="#contact" class="btn-nav">Gọi 0941304192</a>
+
+    <!-- Gói 2 (best seller) -->
+    <div class="card featured">
+      <h3>Deep Pelvic Relaxation</h3>
+      <p class="time">90 phút</p>
+      <p class="price">1.200.000đ</p>
+      <ul>
+        <li>Giãn cơ vùng chậu – hông – lưng chuyên sâu</li>
+        <li>Body treatment trị liệu thư giãn</li>
+        <li>Không gian riêng tư cao cấp</li>
+      </ul>
+      <div class="tag">Best Seller</div>
+    </div>
+
+    <!-- Gói 3 -->
+    <div class="card">
+      <h3>Premium Ritual Wellness</h3>
+      <p class="time">120 phút</p>
+      <p class="price">1.900.000đ</p>
+      <ul>
+        <li>Liệu trình cao cấp ấm trị liệu toàn thân</li>
+        <li>Massage thư giãn sâu – phục hồi năng lượng</li>
+        <li>Phù hợp khách cần xả stress mạnh</li>
+      </ul>
+    </div>
+
   </div>
-</header>
 
-<main>
-  <!-- Hero -->
-  <section id="hero" class="hero">
-    <div class="container hero-inner">
-      <div>
-        <div class="hero-badge">Spa thư giãn • Massage body & chăm sóc da</div>
-        <h1 class="hero-title">
-          Massage <span>Yoni Feeling</span><br />Không gian thư giãn nhẹ nhàng & riêng tư
-        </h1>
-        <p class="hero-sub">
-          Massage thư giãn, chăm sóc da, giảm stress sau giờ làm. Phòng riêng sạch sẽ,
-          âm nhạc nhẹ, mùi hương dễ chịu, phù hợp nghỉ ngơi và tái tạo năng lượng.
-        </p>
-        <ul class="hero-list">
-          <li>Phòng riêng, yên tĩnh, sạch sẽ</li>
-          <li>Massage body thư giãn, giảm mỏi cổ vai gáy</li>
-          <li>Chăm sóc da mặt cơ bản & chuyên sâu</li>
-          <li>Đặt lịch trước, hạn chế đông khách</li>
-        </ul>
-        <div class="hero-actions">
-          <a href="tel:0941304192"><button class="btn-main">Gọi đặt lịch: 0941304192</button></a>
-          <div class="hero-note">Thời gian hoạt động: 10:00 – 22:00 (có thể chỉnh sửa)</div>
-        </div>
-      </div>
-
-      <div class="hero-side">
-        <h2 class="hero-card-title">Gói thư giãn được khách yêu thích</h2>
-        <p class="hero-card-sub">Thiết kế phù hợp dân văn phòng, người hay căng thẳng, mất ngủ, mỏi cơ.</p>
-
-        <div class="hero-card-grid">
-          <div class="hero-card-item">
-            <strong>Body Relax 60'</strong>
-            Massage toàn thân nhẹ nhàng, tập trung vai gáy – lưng – cổ, giúp thư giãn nhanh.
-          </div>
-          <div class="hero-card-item">
-            <strong>Body Deep 90'</strong>
-            Chuyên sâu hơn, phù hợp người ngồi nhiều, đau mỏi lâu ngày, cần thời gian thả lỏng.
-          </div>
-          <div class="hero-card-item">
-            <strong>Foot & Shoulder</strong>
-            Chăm sóc bàn chân + vai cổ, thích hợp sau giờ làm, đi lại nhiều, đứng lâu.
-          </div>
-          <div class="hero-card-item">
-            <strong>Face & Skin Care</strong>
-            Chăm sóc da mặt cơ bản: làm sạch – massage mặt – đắp mặt nạ, giúp da sáng và dễ chịu.
-          </div>
-        </div>
-
-        <div class="hero-hotline">
-          Hotline/Zalo: <span>0941304192</span><br/>
-          Nhắn trước thời gian, số người và nhu cầu để sắp xếp phòng phù hợp.
-        </div>
-      </div>
+  <!-- KHỐI ĐẶT LỊCH -->
+  <div class="booking-box">
+    <h3>ĐẶT LỊCH NHANH</h3>
+    <p>Nhấn 1 chạm để kết nối trực tiếp với Massage Yoni Feeling tại Quận 1.</p>
+    <div class="booking-actions">
+      <!-- ZALO ĐẶT LỊCH -->
+      <a href="https://zalo.me/0941304192" target="_blank" class="btn btn-primary">
+        Đặt lịch qua Zalo
+      </a>
+      <!-- GỌI 1 CHẠM -->
+      <a href="tel:0941304192" class="btn btn-outline">
+        Gọi 1 chạm: 0941 304 192
+      </a>
     </div>
-  </section>
+    <p class="note">Mở cửa: 10:00 – 23:00 • Ưu tiên khách đặt lịch trước.</p>
+  </div>
+</section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">Giới thiệu Massage Yoni Feeling</h2>
-      <p class="section-sub">Một nơi nhỏ, ấm và yên để cơ thể được nghỉ & đầu óc được thả lỏng.</p>
+<!-- CSS LUXURY -->
+<style>
+.pricing-section {
+  padding: 60px 20px;
+  background: #faf7f3;
+  text-align: center;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
 
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Massage Yoni Feeling dành cho những người bận rộn, muốn tìm một chỗ
-            <strong>dịu, sạch và không ồn ào</strong> để reset lại năng lượng sau ngày dài.
-          </p>
-          <p>
-            Bên mình chú trọng không gian, mùi hương, âm nhạc và cảm giác thoải mái,
-            thay vì chạy theo số lượng khách. Mỗi buổi trị liệu luôn được chuẩn bị trước
-            để bạn bước vào là có thể thư giãn ngay.
-          </p>
-          <div class="about-highlight">
-            “Không cần quá sang trọng, chỉ cần đủ yên tĩnh, đủ sạch và đủ chân thành.”
-          </div>
-        </div>
+.pricing-section .title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4a3428;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
 
-        <div class="about-box">
-          <h3>Điểm khác biệt tại Massage Yoni Feeling</h3>
-          <ul class="about-list">
-            <li>▪ Phòng riêng, không ghép khách lạ.</li>
-            <li>▪ Mỗi khách được tư vấn liệu trình riêng phù hợp sức khỏe.</li>
-            <li>▪ Ưu tiên thao tác êm, không làm đau, không vội vàng.</li>
-            <li>▪ Dụng cụ, khăn, ga giường thay mới theo từng khách.</li>
-            <li>▪ Đặt lịch trước để hạn chế phải chờ đợi.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+.pricing-section .sub {
+  font-size: 16px;
+  color: #7a6a5c;
+  margin-bottom: 40px;
+}
 
-  <!-- Services -->
-  <section id="services" class="section" style="background:#f1ebe3;">
-    <div class="container">
-      <h2 class="section-title">Dịch vụ & bảng giá</h2>
-      <p class="section-sub">Giá mẫu, mày tự chỉnh cho đúng với spa của mày.</p>
+.pricing-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-      <div class="card-grid">
-        <div class="card">
-          <div class="tag">Phổ biến</div>
-          <h3>Body Relax 60'</h3>
-          <div class="price">Từ 350.000đ</div>
-          <p>Massage toàn thân thư giãn nhẹ, tập trung vùng mỏi, giảm stress sau giờ làm.</p>
-        </div>
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  position: relative;
+  transition: 0.3s ease;
+}
 
-        <div class="card">
-          <div class="tag">Đề xuất</div>
-          <h3>Body Deep 90'</h3>
-          <div class="price">Từ 500.000đ</div>
-          <p>Thời lượng dài hơn, đi sâu vào cơ, phù hợp người thường xuyên đau mỏi.</p>
-        </div>
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
 
-        <div class="card">
-          <div class="tag">Chăm sóc da</div>
-          <h3>Chăm sóc mặt cơ bản</h3>
-          <div class="price">Từ 300.000đ</div>
-          <p>Làm sạch – massage mặt – đắp mặt nạ thư giãn, giúp da sáng và dễ chịu hơn.</p>
-        </div>
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #4a3428;
+  font-weight: 700;
+}
 
-        <div class="card">
-          <div class="tag">Combo</div>
-          <h3>Body + Foot</h3>
-          <div class="price">Từ 600.000đ</div>
-          <p>Kết hợp massage body + chân, phù hợp cho ngày quá mệt hoặc đi lại nhiều.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+.card .time {
+  color: #7a6a5c;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
 
-  <!-- Gallery -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Không gian spa</h2>
-      <p class="section-sub">Khu vực này mày có thể thay bằng hình thật của spa.</p>
+.card .price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #b88a56;
+  margin-bottom: 20px;
+}
 
-      <div class="gallery-grid">
-        <div class="gallery-item">Ảnh phòng spa 1</div>
-        <div class="gallery-item">Ảnh phòng spa 2</div>
-        <div class="gallery-item">Ảnh quầy lễ tân</div>
-        <div class="gallery-item">Ảnh góc decor</div>
-      </div>
-    </div>
-  </section>
+.card ul {
+  text-align: left;
+  padding-left: 18px;
+  color: #5e5248;
+  line-height: 1.6;
+  font-size: 14px;
+}
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title">Liên hệ & đặt lịch</h2>
-      <p class="section-sub">Nhắn hoặc gọi trước để bên mình chuẩn bị phòng và sắp xếp giờ đẹp cho bạn.</p>
+.featured {
+  border: 2px solid #c8a07a;
+  background: #fff9f2;
+}
 
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p><strong>Tên spa:</strong> Massage Yoni Feeling</p>
-          <p><strong>Địa chỉ:</strong> Điền địa chỉ spa thật ở đây</p>
-          <p><strong>Thời gian hoạt động:</strong> 10:00 – 22:00 (có thể chỉnh)</p>
-          <p><strong>Hotline/Zalo:</strong> 0941304192</p>
+.tag {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #c8a07a;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
 
-          <ul class="social-list">
-            <li><strong>Zalo:</strong> 0941304192</li>
-            <li><strong>Facebook:</strong> Link fanpage/profile (thay sau)</li>
-            <li><strong>TikTok:</strong> @taikhoan_tiktok (thay sau)</li>
-            <li><strong>Instagram:</strong> @taikhoan_instagram (nếu có)</li>
-          </ul>
+/* BOX ĐẶT LỊCH */
+.booking-box {
+  margin-top: 50px;
+  background: #fff;
+  display: inline-block;
+  padding: 25px 30px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+  text-align: center;
+  max-width: 600px;
+}
 
-          <p style="font-size:13px;margin-top:10px;color:#666;">
-            Khi khách nhắn, mày có thể xin: tên, giờ muốn đến, dịch vụ muốn làm, để xếp lịch nhanh & gọn.
-          </p>
-        </div>
+.booking-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #4a3428;
+}
 
-        <div>
-          <div class="map-placeholder">
-            Khu vực hiển thị Google Map hoặc hình spa.<br/>
-            <small>Về sau mày có thể nhúng iframe Google Map hoặc ảnh thật vào đây.</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
+.booking-box p {
+  color: #6b5a4b;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
 
-<footer>
-  © <span>Massage Yoni Feeling</span> – Spa thư giãn & chăm sóc cơ thể.
-</footer>
-</body>
-</html>
+.booking-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #c8a07a;
+  color: #fff;
+  border: 1px solid #c8a07a;
+}
+
+.btn-primary:hover {
+  background: #b6885a;
+  border-color: #b6885a;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #b6885a;
+  border: 1px solid #b6885a;
+}
+
+.btn-outline:hover {
+  background: #fff4ea;
+}
+
+.booking-box .note {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 40px 10px;
+  }
+  .card {
+    width: 100%;
+    max-width: 360px;
+  }
+  .booking-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<!-- KẾT THÚC BẢNG GIÁ + ĐẶT LỊCH -->
